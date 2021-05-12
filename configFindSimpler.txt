@@ -1,0 +1,28 @@
+Mode peer
+
+AddNode 10: 62 27 39
+AddNode 27: 10 39 
+AddNode 39: 27 53 10
+AddNode 53: 39 62 
+AddNode 62: 53 10
+
+PlaceNode 10: 500 10
+PlaceNode 39: 400 350
+PlaceNode 53: 650 350
+
+Successor 10: 27
+Successor 27: 39
+Successor 39: 53
+Successor 53: 62
+Successor 62: 10
+
+DataKeys 55 30 2 22 -2 -64 -3 -15 -20 -30 -28 -33 -48 -50 -41 -55 -61 -58
+Find 10: 55 30 2 22 -2 -64 -3
+Find 27: -15 -20 
+Find 39: -30 -28 -33
+Find 53: -48 -50 -41
+Find 62: -55 -61 -58 
+
+LoadAlgorithm FindSimpler
+
+RoundTime 800

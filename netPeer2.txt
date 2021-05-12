@@ -1,0 +1,48 @@
+Mode peer
+
+AddNode 126: 62 10
+AddNode 10: 126 62 82 43 121
+AddNode 82: 10 27
+AddNode 27: 82 99 
+AddNode 99: 27 43
+AddNode 43: 99 112 10 53 62
+AddNode 112: 43 53
+AddNode 53: 112 121 43
+AddNode 121: 53 62 10
+AddNode 62: 10 121 126 43
+
+PlaceNode 10: 300 50
+PlaceNode 82: 500 10
+PlaceNode 27: 1260 50
+PlaceNode 99: 900 150
+PlaceNode 43: 900 300
+PlaceNode 112: 1260 500
+PlaceNode 53: 550 400
+PlaceNode 121: 300 400
+
+Successor 126: 10
+Successor 10: 82
+Successor 82: 27
+Successor 27: 99
+Successor 99: 43
+Successor 43: 112
+Successor 112: 53
+Successor 53: 121
+Successor 121: 62
+Successor 62: 126
+
+DataKeys 55 30 44 62 122 -7 -59 -8 -15 -20 -38 -28 -33 -48 -50 -41 -55 -61 -58 -62 -122 -60 1126 1082 1099 1112 1121 1027 1010 1043 1053 1062
+Find 126:    -59  -60 -62 1010 1010 1010 1082 1027 1043
+Find 10: 55 62 -7 -8     1082 1082 1082 1082 1027 1043
+Find 82:       -15       1027 1027 1027 1027 1099 1053
+Find 27:       -20       1099 1099 1099 1099 1043 1062
+Find 99:       -28 -33   1043 1043 1043 1043 1053 1062
+Find 43:       -38 -41   1112 1112 1112 1053 1062 1010
+Find 112:      -48       1053 1053 1053 1121 1062 1082
+Find 53:       -50       1121 1121 1121 1062 1062 1027
+Find 121:      -55       1062 1062 1062 1062 1010 1027
+Find 62:   -58 -61 -122  1126 1126 1126 1126 1082 1099
+
+LoadAlgorithm Find
+
+RoundTime 800
